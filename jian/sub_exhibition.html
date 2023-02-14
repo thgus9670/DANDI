@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANDI ART MUSEUM</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/01_index/favicon.png">
+    <!--font 나눔스퀘어라운드-->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script2.js"></script>
+    <!--가져온 js-->
+    <!--지난전시애니효과-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/script.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/sub_exhibition.css">
+    <!--가져온css-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--지난전시애니효과-->
+  
+</head>
+<body>
+    <div id="header_wrap">
+        <!--header-->
+        <div class="header">
+            <!--logo-->
+            <div class="menu_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/01_index/1_header/logo.png" alt="logo"></a></h1>
+                <h1 class="logo_mobile"><a href="index.html"><img src="images/01_index/1_header/mobile_logo.png" alt="mobile_logo"></a></h1>
+                <!--menu-->
+                <div class="header_menu">
+                    <ul class="gnb navbar_menu">
+                        <li>
+                            <a href="sub_exhibition.html">전시</a>
+                            <div class="submenu_wrap">
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#now_exhibition">현재전시</a></li>
+                                        <li><a href="#scheduled_exhibition">예정전시</a></li>
+                                        <li><a href="#past_exhibition">지난전시</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sub_information.html">미술관안내</a>
+                            <div class="submenu_wrap">
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="sub_information.html#info">관람안내</a></li>
+                                        <li><a href="sub_information.html#care">유의사항</a></li>
+                                        <li><a href="sub_information.html#map">오시는길</a></li>
+                                        <li><a href="sub_information.html#info_img">미술관소개</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sub_shop.html">상품</a>
+                            <div class="submenu_wrap">
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="sub_shop.html#dandi_intro">캐릭터소개</a></li>
+                                        <li><a href="sub_shop.html#office_wrap">문구용품</a></li>
+                                        <li><a href="sub_shop.html#office_wrap">잡화</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--util-->
+                <nav class="header_util">
+                    <ul class="util">
+                        <li class="login"><a href="login.html">로그인</a></li>
+                        <li>
+                            <select name="language" id="header_lang">
+                                <option value="kor">KOR</option>
+                                <option value="eng">ENG</option>
+                            </select>
+                        </li>
+                        <li class="util_find"><a href="javascript:return false;"><img src="images/01_index/1_header/search.png" alt=""></a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:return false;" class="navbar_toggleBtn"><img src="images/01_index/1_header/mobile_menu.png" alt=""></a>
+            </div>
+            <!--popup창-->
+            <div id="popup_find">
+                <!--닫기버튼-->
+                <div class="close">
+                    <button type="button" class="popup_close"></button>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <!--확인버튼-->
+                        <input type="submit" value="확인">
+                    </form>
+                </div>
+            </div>
+            <!--popup창 끝-->
+        </div>
+        <!--header_aligner 끝-->
+    </div>
+    <script>
+        const toggleBtn = document.querySelector(".navbar_toggleBtn")
+        const menu = document.querySelector(".navbar_menu")
+        const icons = document.querySelector(".navbar_icons")
+
+        toggleBtn.addEventListener("click", () => {
+            menu.classList.toggle("active")
+            icons.classList.toggle("active")
+        })
+    </script>
+    <!--header_wrap 끝-->
+    <!--header 끝-->
+
+    <div id="container"><!--container_S-->
+        <div class="lnb_wrap"><!--왼/200-->
+            <h2>전시</h2>
+            <ul class="lnb">
+                <li><a href="#now_exhibition">현재전시</a></li>
+                <li><a href="#scheduled_exhibition">예정전시</a></li>
+                <li><a href="#past_exhibition">지난전시</a></li>
+            </ul>
+        </div>
+        <div class="contents"><!--contents_S-->
+            <h1>전시</h1>
+            <h3>현재전시</h3>
+            <div id="now_exhibition"><!--now_exhibition S-->
+                <div class="now_box">
+                    <div>
+                        <a href="sub_exhibition_detail1_2023.html"><img src="images/02_sub_exhibition/01exhibition/02now/now_2023poster.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">현재전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">토끼를 찾아서</p>
+                        <p class="poster_date">2023.01.05 - 2023.01.20</p>
+                    </div>
+                </div>
+                <div class="now_box">
+                    <div>
+                        <a href="sub_exhibition_detail2_another.html"><img src="images/02_sub_exhibition/01exhibition/02now/now_another.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">현재전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">또 다른 차원으로</p>
+                        <p class="poster_date">2023.01.25 - 2023.02.11</p>
+                    </div>
+                </div>
+                <div class="now_box">
+                    <div>
+                        <a href="sub_exhibition_detail3_Shakespeare.html"><img src="images/02_sub_exhibition/01exhibition/02now/now_Shakespeare.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">현재전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">시대의 얼굴</p>
+                        <p class="poster_date">2023.03.03 - 2023.03.23</p>
+                    </div>
+                </div>
+            </div><!--now_exhibition E-->
+
+            <h3>예정전시</h3>
+            <div id="scheduled_exhibition"><!--scheduled exhibition S-->
+                <div class="text-focus-in"  >
+                    <div>
+                        <a href="sub_exhibition_detail4_spring.html"><img src="images/02_sub_exhibition/01exhibition/03scheduled/scheduled_spring.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">예정전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">Waiting for spring</p>
+                        <p class="poster_date">2023.03.15 - 2023.04.15</p>
+                    </div>
+                </div>
+                <div class="text-focus-in">
+                    <div >
+                        <a href="sub_exhibition_detail5_Kimhongdo.html"><img src="images/02_sub_exhibition/01exhibition/03scheduled/scheduled_Kimhongdo.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">예정전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">단원 김홍도 Alive:sight, Insight</p>
+                        <p class="poster_date">2023.04.05 - 2023.04.30</p>
+                    </div>
+                </div>
+            </div><!--scheduled exhibition E-->
+            <div class="scheduled_exhibition2"><!--scheduled exhibition2 S-->
+                <div class="text-focus-in">
+                    <div>
+                        <a href="sub_exhibition_detail6_city.html"><img src="images/02_sub_exhibition/01exhibition/03scheduled/scheduled_city.png" alt="poster"></a>
+                    </div>
+                    <div class="exhibition_text">
+                        <p class="now">예정전시</p>
+                        <p class="special">특별전</p>
+                        <p class="poster_name">도시예술연구소</p>
+                        <p class="poster_date">2023.04.29 - 2023.05.15</p>
+                    </div>
+                </div>
+            </div><!--scheduled exhibition2 E-->
+            <h3>지난전시</h3>
+            <div id="past_exhibition"><!--past exhibition E-->
+            <div class="past_box" data-aos="fade-right" data-aos-duration="1000">
+                <div>
+                    <a href="sub_exhibition_detail7_future.html"><img src="images/02_sub_exhibition/01exhibition/04past/fast_future.png" alt="poster"></a>
+                </div>
+                <div class="exhibition_text">
+                    <p class="now">지난전시</p>
+                    <p class="special">특별전</p>
+                    <p class="poster_name">Future</p>
+                    <p class="poster_date">2022.12.01 - 2022.12.25</p>
+                </div>
+            </div>
+            <div class="past_box2" data-aos="fade-left" data-aos-duration="1000">
+                <div>
+                    <a href="sub_exhibition_detail8_geometry.html"><img src="images/02_sub_exhibition/01exhibition/04past/fast_geometry.png" alt="poster"></a>
+                </div>
+                <div class="exhibition_text">
+                    <p class="now">지난전시</p>
+                    <p class="special">특별전</p>
+                    <p class="poster_name">geometry</p>
+                    <p class="poster_date">2022.08.10 - 2022.08.31</p>
+                </div>
+            </div>
+            <div class="past_box" data-aos="fade-right" data-aos-duration="1000">
+                <div>
+                    <a href="sub_exhibition_detail9_jian.html"><img src="images/02_sub_exhibition/01exhibition/04past/fast_jian.png" alt="poster"></a>
+                </div>
+                <div class="exhibition_text">
+                    <p class="now">지난전시</p>
+                    <p class="special">특별전</p>
+                    <p class="poster_name">최지안 첫번째 개인전</p>
+                    <p class="poster_date">2020.11.15 - 2022.11.29</p>
+                </div>
+            </div>
+            </div><!--past exhibition E-->
+
+        </div><!--contents_E-->
+    </div><!--container_E-->
+
+
+    <div id="footer_wrap"><!--footer_S-->
+        <div class="footer">
+            <a href="" class="footer_logo">
+                <img src="images/01_index/6_footer/footer_logo.png" alt="">
+            </a>
+            <div class="footer_box">
+            <p class="footer_info">
+                <a href="sub_information.html#info">관람안내</a>
+                <a href="sub_information.html#map">오시는길</a>
+                <strong>TEL : 055-552-1234</strong>
+            </p></div>
+            <ul class="sns">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/01_index/6_footer/icon_insta.png" alt="icon"></a></li>
+                <li><a href="https://ko-kr.facebook.com/" target="_blank"><img src="images/01_index/6_footer/icon_facebook.png" alt="icon"></a></li>
+                <li class="sns_youtube"><a href="https://www.youtube.com/" target="_blank"><img src="images/01_index/6_footer/icon_youtube.png" alt="icon"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--footer_E-->
+
+    <!--up_btn-->
+    <div class="up_btn">
+        <a href="#header_wrap">
+            <img src="images/01_index/6_footer/button_up.png" alt="">
+        </a>
+    </div>  
+</body>
+</html>
